@@ -11,5 +11,7 @@ jobs:
       - name: patch
         uses: ./
         id: patch
+	with:
+          project: evergreen-action
         env:
           EVERGREEN_AUTH: ${{ secrets.EVERGREEN_AUTH }}

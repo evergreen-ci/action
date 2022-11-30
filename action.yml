@@ -1,6 +1,20 @@
 # action.yml
 name: 'evergreen patch'
 description: 'submit an evergreen patch'
+inputs:
+  project:
+    description: "project id to patch"
+    required: true
+  variant_regex:
+    description: "regex to pass to rv flag"
+    default: ".*"
+  task_regex:
+    description: "regex to pass to rt flag"
+    default: ".*"
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.project }}
+    - ${{ inputs.variant_regex }}
+    - ${{ inputs.task_regex }}
