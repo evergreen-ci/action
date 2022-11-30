@@ -1,0 +1,15 @@
+tasks:
+  - name: hello
+    commands:
+      - command: shell.exec
+        params:
+          script: |
+            echo "hello, Evergreen"
+            
+buildvariants:
+  - name: ubuntu2204
+    display_name: Ubuntu 22.04
+    run_on:
+      - ubuntu2204-small
+    tasks:
+      - hello
