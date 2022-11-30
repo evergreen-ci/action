@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-echo $1 > /.evergreen.yml
+echo $EVERGREEN_AUTH > /.evergreen.yml
 /evergreen --help
 ls /.evergreen.yml
 wc /.evergreen.yml

@@ -10,5 +10,5 @@ jobs:
       - name: Hello world action step
         uses: ./
         id: hello
-        with:
-          evergreen_auth: "static secret"
+        env:
+          EVERGREEN_AUTH: "static secret"
