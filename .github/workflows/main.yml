@@ -12,4 +12,4 @@ jobs:
         uses: ./
         id: hello
         env:
-          EVERGREEN_AUTH: ${{ secrets.EVERGREEN_AUTH_DUMMY }}
+          EVERGREEN_AUTH: ${{ secrets.EVERGREEN_AUTH }}
