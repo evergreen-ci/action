@@ -1,13 +1,6 @@
 # action.yml
 name: 'evergreen patch'
 description: 'submit an evergreen patch'
-inputs:
-  evergreen_auth:
-    description: 'Evergreen auth file'
-    required: true
-    default: 'no auth file provided'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.evergreen_auth }}
