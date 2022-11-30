@@ -30,6 +30,8 @@ A regex of tasks to patch against.
 
 ## Example usage
 
+**This action is not yet published. The example below is intended to work from the same repo the action is defined.**
+
 ```
 on: [push]
 
