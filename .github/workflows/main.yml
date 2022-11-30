@@ -4,6 +4,7 @@ jobs:
   hello_world_job:
     runs-on: ubuntu-latest
     name: A job to say hello
+    environment: test
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -11,4 +12,4 @@ jobs:
         uses: ./
         id: hello
         env:
-          EVERGREEN_AUTH: "static secret"
+          EVERGREEN_AUTH: ${{ secrets.EVERGREEN_AUTH_DUMMY }}
