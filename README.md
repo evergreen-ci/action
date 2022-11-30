@@ -2,6 +2,8 @@
 
 This action submits an Evergreen patch.
 
+**This action is not yet published. The example below is intended to work from the same repo the action is defined.**
+
 ## Auth
 
 You must get the 4-line authentication file from
