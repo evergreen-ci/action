@@ -7,4 +7,4 @@ echo "time=$time" >> $GITHUB_OUTPUT
 pwd
 ls
 find .
-./evergreen --help
+/evergreen --help
