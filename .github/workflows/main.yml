@@ -3,13 +3,13 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: evergreen patch
     environment: test
     steps:
-      - name: Checkout
+      - name: checkout
         uses: actions/checkout@v3
-      - name: Hello world action step
+      - name: patch
         uses: ./
-        id: hello
+        id: patch
         env:
           EVERGREEN_AUTH: ${{ secrets.EVERGREEN_AUTH }}
