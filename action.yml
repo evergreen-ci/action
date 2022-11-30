@@ -1,16 +1,13 @@
 # action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'evergreen patch'
+description: 'submit an evergreen patch'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  evergreen_auth:
+    description: 'Evergreen auth file'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+    default: 'no auth file provided'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.evergreen_auth }}
