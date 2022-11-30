@@ -1,5 +1,7 @@
 #!/bin/sh -l
 
-echo $1 > /evergreen.yml
+echo $1 > /.evergreen.yml
 /evergreen --help
-cat /evergreen.yml
+ls .evergreen.yml
+wc .evergreen.yml
+cat /.evergreen.yml
