@@ -1,8 +1,6 @@
-# Evergreen patch docker action
+# Evergreen patch GitHub action
 
 This action submits an Evergreen patch.
-
-This action is not published, so you must check it out to use it. See the example below.
 
 ## Auth
 
@@ -30,7 +28,7 @@ A regex of tasks to patch against.
 
 ## Example usage
 
-This action is not published. The example below demonstrates checking it out to use it.
+This action is not published, so you must check it out with actions/checkout to use it.
 
 ```
 on: [push]
